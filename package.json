@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  },
+  "name": "dripmarket",
+  "description": "Drip Market:",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BatiOli9/dripMarket.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BatiOli9/dripMarket/issues"
+  },
+  "homepage": "https://github.com/BatiOli9/dripMarket#readme"
+}

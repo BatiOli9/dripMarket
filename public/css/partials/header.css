@@ -1,0 +1,137 @@
+.input-container {
+  width: 80%;
+  left: 10%;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  right: 10px;
+  top: calc(50% + 5px);
+  transform: translateY(calc(-50% - 5px));
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  transition: .2s linear;
+  border: 2.5px solid black;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.input:focus {
+  outline: none;
+  border: 0.5px solid black;
+  box-shadow: -5px -5px 0px black;
+}
+
+.input-container:hover > .icon {
+  animation: anim 1s linear infinite;
+}
+
+@keyframes anim {
+  0%,
+  100% {
+    transform: translateY(calc(-50% - 5px)) scale(1);
+  }
+
+  50% {
+    transform: translateY(calc(-50% - 5px)) scale(1.1);
+  }
+}
+
+.envios-section {
+  background-color: #162538;
+}
+
+.p-envios-section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.center-section {
+  width: 100%;
+  position: relative;
+}
+
+.logo {
+  position: relative;
+  width: 65%;
+  left: 16.25%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.nav-phone {
+  margin-top: 5%;
+  width: 100%;
+  position: relative;
+}
+
+.nav-list-phone {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.nav-option-phone {
+  position: relative;
+  text-align: center;
+  left: 18%;
+  margin-left: 8%;
+  margin-right: 8%;
+  font-size: 1.2em;
+}
+
+.nav-option-a-phone {
+  color: #162538;
+}
+
+.nav {
+  display: none;
+}
+
+@media (min-width: 550px) {
+  .logo {
+    width: 40%;
+    left: 30%;
+  }
+  .nav {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 14%;
+    left: 43%;
+  }
+  .nav-phone {
+    display: none;
+  }
+  .nav {
+    margin-top: 1%;
+    display: block;
+  }
+  .nav-list-1 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 30%;
+  }
+  .nav-option {
+    position: relative;
+    padding-left: 2%;
+  }
+  .input-container {
+    width: 60%;
+    left: 20%;
+  }
+}
